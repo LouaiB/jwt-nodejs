@@ -1,0 +1,41 @@
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "email": "user1@web.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:5000/refresh
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQzYTc4ZjY3M2I4NzQzM2M2ZWE1M2MiLCJpYXQiOjE1OTgyNzQzODF9.DendV9x5IHiCck-kpcTfBwtG83Rw7j76d2PPt02u-1U"
+}
+
+###
+
+POST http://localhost:5000/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQzYTc4ZjY3M2I4NzQzM2M2ZWE1M2MiLCJ1c2VybmFtZSI6InVzZXIxIiwicm9sZXMiOltdLCJpYXQiOjE1OTgyNzI4ODZ9.75LN0ZWAQVOjrcoGRo2Kxvm0bXj-gA3F94Y46v3ah50"
+}
+
+###
+
+GET http://localhost:5000/test
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQzYTc4ZjY3M2I4NzQzM2M2ZWE1M2MiLCJ1c2VybmFtZSI6InVzZXIxIiwicm9sZXMiOlsiYWRtaW4iXSwiaWF0IjoxNTk4Mjc0NTc1LCJleHAiOjE1OTgyNzQ1OTB9.WziGoww3LUjiujwKCcHmBJ6FSsxdGVikr99CRXgD-l8
